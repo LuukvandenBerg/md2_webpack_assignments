@@ -20,6 +20,8 @@
  * string variabele met de naam 'teacherName' en als waarde 'Berend'
  */
 
+ debugger;
+
 /**
  * Opdracht 2: Arrays
  * Bedenk 3 arrays en vul ze met primitives

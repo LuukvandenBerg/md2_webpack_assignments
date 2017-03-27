@@ -20,8 +20,11 @@
  * string variabele met de naam 'teacherName' en als waarde 'Berend'
  */
 
- debugger;
-
+ var LuukB = ['age':17, 'school':'mediacollege', 'course':'mediadeveloper'];
+ var Menno = ['age':18, 'school':'mediacollege', 'course':'mediadeveloper'];
+ var Tom = ['age':18, 'school':'mediacollege', 'course':'mediadeveloper'];
+ var Martijn = ['age':17, 'school':'mediacollege', 'course':'mediadeveloper'];
+ var LuukM = ['age':17, 'school':'mediacollege', 'course':'mediadeveloper'];
 /**
  * Opdracht 2: Arrays
  * Bedenk 3 arrays en vul ze met primitives
@@ -31,18 +34,28 @@
  * "Erwin']
  */
 
+ var students = ['Luuk', 'menno', 'Tom'];
+ var teacher = ['ed', 'berend', 'hugo'];
+ var brands = ['Dell', 'Acer', 'Toshiba'];
+
 /**
  * Opdracht 3: Arrays push
  * Maak een lege array aan
  * push er een string in
  */
+var legeArray = [];
 
+legeArray.push('Iets');
 /**
  * Opdracht 4: Array splice
  * Maak een array aan en vul hem met namen
  * Gooi de naam op de 1e plek weg
  * Gooi de naam op de 3e plek weg
  */
+
+ var namen = ['Luuk', 'Tom', 'Menno'];
+
+ namen.splice(0,2);
 
 /**
  * Opdracht 5: Objects
@@ -52,12 +65,22 @@
  * en hoe oud hij is
  */
 
+ var mobile = [brand:'samsung', age:0.7, android:7.0];
+ var mouse = [brand:'logitech', model:'g502'];
+ var laptop = [brand:'Dell', age:1.5];
+ var keyboard = [brand:'Razer', age:4];
+ var tv = [brand:'philips', age:6];
+ var monitor = [brand:'LG', age:6];
+ var headphones = [brand: 'sony', age:4];
+
 /**
  * Opdracht 6: Functions
  * Bedenk 4 functies die handig zouden kunnen zijn
  * Bijvoorbeeld een functie met de naam 'multiply'. Deze functie verwacht 2
  * parameters value & multiplier console.log( value * multiplier)
  */
+
+ function 
 
 /**
  * Opdracht 7: Function & objects

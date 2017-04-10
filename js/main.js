@@ -20,11 +20,11 @@
  * string variabele met de naam 'teacherName' en als waarde 'Berend'
  */
 
- var LuukB = ['age':17, 'school':'mediacollege', 'course':'mediadeveloper'];
+ /*var LuukB = ['age':17, 'school':'mediacollege', 'course':'mediadeveloper'];
  var Menno = ['age':18, 'school':'mediacollege', 'course':'mediadeveloper'];
  var Tom = ['age':18, 'school':'mediacollege', 'course':'mediadeveloper'];
  var Martijn = ['age':17, 'school':'mediacollege', 'course':'mediadeveloper'];
- var LuukM = ['age':17, 'school':'mediacollege', 'course':'mediadeveloper'];
+ var LuukM = ['age':17, 'school':'mediacollege', 'course':'mediadeveloper'];*/
 /**
  * Opdracht 2: Arrays
  * Bedenk 3 arrays en vul ze met primitives
@@ -34,18 +34,18 @@
  * "Erwin']
  */
 
- var students = ['Luuk', 'menno', 'Tom'];
+ /*var students = ['Luuk', 'menno', 'Tom'];
  var teacher = ['ed', 'berend', 'hugo'];
- var brands = ['Dell', 'Acer', 'Toshiba'];
+ var brands = ['Dell', 'Acer', 'Toshiba'];*/
 
 /**
  * Opdracht 3: Arrays push
  * Maak een lege array aan
  * push er een string in
  */
-var legeArray = [];
+//var legeArray = [];
 
-legeArray.push('Iets');
+//legeArray.push('Iets');
 /**
  * Opdracht 4: Array splice
  * Maak een array aan en vul hem met namen
@@ -53,9 +53,9 @@ legeArray.push('Iets');
  * Gooi de naam op de 3e plek weg
  */
 
- var namen = ['Luuk', 'Tom', 'Menno'];
+ //var namen = ['Luuk', 'Tom', 'Menno'];
 
- namen.splice(0,2);
+ //namen.splice(0,2);
 
 /**
  * Opdracht 5: Objects
@@ -65,13 +65,13 @@ legeArray.push('Iets');
  * en hoe oud hij is
  */
 
- var mobile = [brand:'samsung', age:0.7, android:7.0];
+ /*var mobile = [brand:'samsung', age:0.7, android:7.0];
  var mouse = [brand:'logitech', model:'g502'];
  var laptop = [brand:'Dell', age:1.5];
  var keyboard = [brand:'Razer', age:4];
  var tv = [brand:'philips', age:6];
  var monitor = [brand:'LG', age:6];
- var headphones = [brand: 'sony', age:4];
+ var headphones = [brand: 'sony', age:4];*/
 
 /**
  * Opdracht 6: Functions
@@ -80,7 +80,7 @@ legeArray.push('Iets');
  * parameters value & multiplier console.log( value * multiplier)
  */
 
- function 
+ /*function */
 
 /**
  * Opdracht 7: Function & objects
@@ -122,7 +122,7 @@ legeArray.push('Iets');
  * Geef in de console.log antwoord op de vraag door een boolean op true of
  * false te zetten
  */
-console.log('De naam van een gebruiker sla ik op in een:',
+/*console.log('De naam van een gebruiker sla ik op in een:',
             { array : false, object : false, primitive : false });
 
 console.log('De naam, leeftijd en lengte van een gebruiker sla ik op in een:',
@@ -135,7 +135,7 @@ console.log('Een factuur sla ik op in een:',
             { array : false, object : false, primitive : false });
 
 console.log('Als ik vanuit JavaScript een menu maak met knoppen, dan sla ik de knoppen op in een:',
-            { array : false, object : false, primitive : false });
+            { array : false, object : false, primitive : false });*/
 
 /**
  * Opdracht 13: Keywords
@@ -147,8 +147,8 @@ console.log('Als ik vanuit JavaScript een menu maak met knoppen, dan sla ik de k
  * Opdracht 14: Keywords
  * Geef antwoord op de volgende vragen:
  */
-console.log('Wanneer gebruik je de let keyword?', 'jouw antwoord');
-console.log('Wanneer gebruik je de const keyword', 'jouw antwoord');
+/*console.log('Wanneer gebruik je de let keyword?', 'jouw antwoord');
+console.log('Wanneer gebruik je de const keyword', 'jouw antwoord');*/
 
 /**
  * Opdracht 15: Objects en array
@@ -156,3 +156,76 @@ console.log('Wanneer gebruik je de const keyword', 'jouw antwoord');
  * Maak in je object een array aan genaamd 'family' en vul deze array met namen uit je familie
  * (objecten en arrays kunnen in elkaar opgeslagen worden)
  */
+
+/**
+ * Hieronder heb ik code geschreven die je nodig hebt voor vraag 16 en 17
+ * Aan deze code hoef je niets te veranderen
+ */
+
+Array.prototype.random = function() {
+    let randomIndex = Math.floor(Math.random() * this.length);
+    return this[ randomIndex ];
+};
+
+String.prototype.replaceAll = function(search, replacement) {
+    return this.replace(new RegExp(search, 'g'), replacement);
+};
+
+/**
+ * Opdracht 16: Custom prototype method gebruiken
+ * Maak een array met meerdere namen
+ * Probeer vervolgens de random() functie (die hierboven staat) te gebruiken
+ * Tip: je roept deze functie op dezelfde manier aan als bijvoorbeeld push() en
+ * splice().
+ * console.log() de naam die deze functie returned
+ */
+
+ var namen = ['Luuk', 'Menno', 'Tom'];
+ console.log(namen.random());
+
+/**
+ * Opdracht 17: Custom prototype method gebruiken
+ * Maak een variabele .waarin je een lange tekst opslaat
+ * Probeer vervolgens de replaceAll() functie te gebruiken om een bepaald woord
+ * op alle plekken te vervangen voor een ander woord
+ * console.log() deze gewijzigde tekst
+ */
+var tekst = 'Lange tekst';
+console.log(tekst.replaceAll('Lange' , 'Korte'));
+/**
+ * Opdracht 18: Prototype based language
+ * Geef antwoord op onderstaande vraag
+ */
+console.log('Waarom heet JavaScript een prototype based language?', 'Het is een van de weinige talen die OOP is en gebruikt maakt van overerfen');
+
+/**
+ * Opdracht 19: Zelf een custom prototype method maken
+ * Soms wil je een array leeg kunnen gooien. Het zou dus wel handig zijn als
+ * je bij elke array een empty() functie kunt aanroepen.
+ * Zorg ervoor dat deze functie er is en laat met 3 arrays zien dat hij werkt
+ */
+
+Array.prototype.empty = function() {
+	 while (this.length) {
+    this.pop();
+  }
+};
+
+var namen = ['Luuk', 'Menno', 'Tom'];
+var teacher = ['ed', 'berend', 'hugo'];
+var brands = ['Dell', 'Acer', 'Toshiba'];
+console.log(namen.empty());
+console.log(teacher.empty());
+console.log(brands.empty());
+
+/**
+ * Opdracht 20: Monkey patching (?)
+ * Je begint nu in te zien hoe JS werkt. Probeer nu de splice() en push()
+ * functies van Arrays te overschrijven met een eigen functie.
+ * Maak 2 arrays aan en laat zien dat je code werkt
+ */
+
+Array.prototype.push = function() {
+	console.log('ik doe het niet meer');
+};
+

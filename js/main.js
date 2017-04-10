@@ -214,6 +214,7 @@ console.log(tekst.replaceAll('Lange' , 'Korte'));
  * Geef antwoord op onderstaande vraag
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 console.log('Waarom heet JavaScript een prototype based language?', 'Het is een van de weinige talen die OOP is en gebruikt maakt van overerfen');
 
 /**
@@ -249,4 +250,22 @@ Array.prototype.push = function() {
 =======
 console.log('Waarom heet JavaScript een prototype based language?', 'jouw antwoord');
 >>>>>>> refs/remotes/BerendWeij/master
+=======
+console.log('Waarom heet JavaScript een prototype based language?',
+            'jouw antwoord');
+>>>>>>> refs/remotes/BerendWeij/master
 
+
+/**
+ * Opdracht 19: Zelf een custom prototype method maken
+ * Soms wil je een array leeg kunnen gooien. Het zou dus wel handig zijn als
+ * je bij elke array een empty() functie kunt aanroepen.
+ * Zorg ervoor dat deze functie er is en laat met 3 arrays zien dat hij werkt
+ */
+
+/**
+ * Opdracht 20: Monkey patching (?)
+ * Je begint nu in te zien hoe JS werkt. Probeer nu de splice() en push()
+ * functies van Arrays te overschrijven met een eigen functie.
+ * Maak 2 arrays aan en laat zien dat je code werkt
+ */

@@ -134,8 +134,14 @@ console.log('Alle facturen van een zakelijke klant sla ik op in een:',
 console.log('Een factuur sla ik op in een:',
             { array : false, object : false, primitive : false });
 
+<<<<<<< HEAD
 console.log('Als ik vanuit JavaScript een menu maak met knoppen, dan sla ik de knoppen op in een:',
             { array : false, object : false, primitive : false });*/
+=======
+console.log(
+    'Als ik vanuit JavaScript een menu maak met knoppen, dan sla ik de knoppen op in een:',
+    { array : false, object : false, primitive : false });
+>>>>>>> refs/remotes/BerendWeij/master
 
 /**
  * Opdracht 13: Keywords
@@ -153,7 +159,8 @@ console.log('Wanneer gebruik je de const keyword', 'jouw antwoord');*/
 /**
  * Opdracht 15: Objects en array
  * Maak een object voor jezelf (naam, leeftijd, lengte)
- * Maak in je object een array aan genaamd 'family' en vul deze array met namen uit je familie
+ * Maak in je object een array aan genaamd 'family' en vul deze array met namen
+ * uit je familie
  * (objecten en arrays kunnen in elkaar opgeslagen worden)
  */
 
@@ -180,22 +187,33 @@ String.prototype.replaceAll = function(search, replacement) {
  * console.log() de naam die deze functie returned
  */
 
+<<<<<<< HEAD
  var namen = ['Luuk', 'Menno', 'Tom'];
  console.log(namen.random());
 
 /**
  * Opdracht 17: Custom prototype method gebruiken
  * Maak een variabele .waarin je een lange tekst opslaat
+=======
+/**
+ * Opdracht 17: Custom prototype method gebruiken
+ * Maak een variabele waarin je een lange tekst opslaat
+>>>>>>> refs/remotes/BerendWeij/master
  * Probeer vervolgens de replaceAll() functie te gebruiken om een bepaald woord
  * op alle plekken te vervangen voor een ander woord
  * console.log() deze gewijzigde tekst
  */
+<<<<<<< HEAD
 var tekst = 'Lange tekst';
 console.log(tekst.replaceAll('Lange' , 'Korte'));
+=======
+
+>>>>>>> refs/remotes/BerendWeij/master
 /**
  * Opdracht 18: Prototype based language
  * Geef antwoord op onderstaande vraag
  */
+<<<<<<< HEAD
 console.log('Waarom heet JavaScript een prototype based language?', 'Het is een van de weinige talen die OOP is en gebruikt maakt van overerfen');
 
 /**
@@ -228,4 +246,7 @@ console.log(brands.empty());
 Array.prototype.push = function() {
 	console.log('ik doe het niet meer');
 };
+=======
+console.log('Waarom heet JavaScript een prototype based language?', 'jouw antwoord');
+>>>>>>> refs/remotes/BerendWeij/master
 

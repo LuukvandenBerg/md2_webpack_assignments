@@ -7,7 +7,9 @@
  * Maak een object aan en check via existy() of hij bestaat
  * Maak een variabele aan maar geef hem nog geen vulling. Console.log() wat existy() teruggeeft
  */
+import {existy} from 'utils/conditions.utils';
 
+console.log('hoi');
 /**
  * Opdracht 2: exports
  *
